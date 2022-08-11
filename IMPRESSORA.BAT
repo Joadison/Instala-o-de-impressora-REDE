@@ -22,7 +22,7 @@ if %imp% equ 1 goto opcao1
 if %imp% equ 2 goto opcao2
 :opcao1
 echo Driver
-cscript "C:\Windows\System32\Printing_Admin_Scripts\pt-BR\prndrvr.vbs" -a -m "RICOH SP 4510SF PCL 6" -v 3 -e "x64" -i  "\\10.1.2.60\tjce\Aplicativos\Drivers\Ricoh\Drivers\OEMSETUP.INF"
+cscript "C:\Windows\System32\Printing_Admin_Scripts\pt-BR\prndrvr.vbs" -a -m "RICOH SP 4510SF PCL 6" -v 3 -e "x64" -i  "OEMSETUP.INF"
 cscript "C:\Windows\System32\Printing_Admin_Scripts\pt-BR\prndrvr.vbs" -a -m "RICOH SP 4510SF PCL 6" -v 3 -e "x64"
 echo IP
 cscript "C:\Windows\System32\Printing_Admin_Scripts\pt-BR\prnport.vbs" -a -r "%ip%" -h %ip%
@@ -36,7 +36,7 @@ pause
 exit
 :opcao2
 echo Driver
-cscript "C:\Windows\System32\Printing_Admin_Scripts\pt-BR\prndrvr.vbs" -a -m "Lexmark MX620 Series XL" -v 3 -e "x64" -i "\\10.1.2.60\tjce\Aplicativos\Drivers\Lexmark\Lexmark MX622_Pacote Completo\Drivers\Print\GDI\LMU03p40.inf"
+cscript "C:\Windows\System32\Printing_Admin_Scripts\pt-BR\prndrvr.vbs" -a -m "Lexmark MX620 Series XL" -v 3 -e "x64" -i "LMU03p40.inf"
 cscript "C:\Windows\System32\Printing_Admin_Scripts\pt-BR\prndrvr.vbs" -a -m "Lexmark MX620 Series XL" -v 3 -e "x64"
 echo IP
 cscript "C:\Windows\System32\Printing_Admin_Scripts\pt-BR\prnport.vbs" -a -r "%ip%" -h %ip%
